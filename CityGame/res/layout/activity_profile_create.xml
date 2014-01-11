@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/profile_create_name">
+	</TextView>
+	
+    <EditText
+        android:id="@+id/createProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:maxLines="@integer/single_line"
+        android:minLines="@integer/single_line">
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:text="@string/profile_create_password">
+	</TextView>
+    
+    <EditText
+        android:id="@+id/createProfilePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:maxLines="@integer/single_line"
+        android:minLines="@integer/single_line"
+        android:text="@string/profile_create_blank_password" >
+    </EditText>
+    
+    <Button
+        android:id="@+id/createProfileOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/profile_create_ok" />
+
+</LinearLayout>
